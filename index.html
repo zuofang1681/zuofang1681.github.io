@@ -1,11 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>我的网站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>左方1681的个人主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .title {
+            color: #667eea;
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+        .bio {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .link-btn {
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .link-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+    </style>
 </head>
 <body>
-    <h1>网站恢复成功啦！</h1>
-    <p>接下来我们再升级成漂亮的个人主页~</p>
+    <div class="card">
+        <div class="avatar">左</div>
+        <h1>左方1681</h1>
+        <p class="title">网页制作新手 / GitHub Pages玩家</p>
+        <p class="bio">你好！我是左方1681，这是我的第一个GitHub Pages个人主页。从零开始学网页制作，终于成功上线啦！以后会慢慢解锁更多好玩的功能~</p>
+        <div class="links">
+            <a href="#" class="link-btn">我的微信</a>
+            <a href="#" class="link-btn">我的邮箱</a>
+            <a href="https://github.com/zuofang1681" target="_blank" class="link-btn">我的GitHub</a>
+        </div>
+    </div>
 </body>
 </html>
